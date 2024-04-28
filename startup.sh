@@ -7,15 +7,15 @@ touch ~/automation/bot.js
 echo "
     const Nightmare = require('nightmare');
     const nightmare = Nightmare({show: true});
-
-
+    
     nightmare
         .goto('https://delightfulinsights.com')
         .then((gotoResult) => {
-            console.log(gotoResult.code); //prints out the HTTP status for the request
-        })
-        .catch(function(e)  {
+                console.log(gotoResult.code); //prints out the HTTP status for the request
+            })
+            .catch(function(e)  {
                 console.log(e);
+            }
         });
 " >> bot.jsxvfb
 xvfb-run node bot.js
