@@ -17,5 +17,5 @@ echo "
                 console.log(e);
             }
         });
-" >> bot.jsxvfb
+" >> ~/automation/bot.js
 xvfb-run node bot.js
