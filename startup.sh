@@ -15,8 +15,7 @@ echo "
             })
             .catch(function(e)  {
                 console.log(e);
-            }
-        });
+            });
 " >> ~/automation/bot.js
 
 xvfb-run node ~/automation/bot.js
