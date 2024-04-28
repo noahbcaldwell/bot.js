@@ -18,4 +18,4 @@ echo "
             }
         });
 " >> ~/automation/bot.js
-xvfb-run node bot.js
+xvfb-run node ~/automation/bot.js
